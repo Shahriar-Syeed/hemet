@@ -1,119 +1,6 @@
-$color_1: #fff;
-$color_2: #5dc5e3;
-$color_3: #323232;
-$color_5: #d8358d;
-$color_6: #da2d2a;
-$color_7: #65d2b9;
-$color_8: #769c00;
-$color_9: #9b9b9b;
-$color_10: #1a96d2;
-$color_11: #dfdfdf;
-$color_12: #c6c6c6;
-$color_13: #c68916;
-$color_14: #333;
-$color_15: #999;
-$color_16: #666;
-$color_17: #33aaff;
-$color_18: #f6f6f6;
-$color_19: #d0cdc7;
-$color_20: rgba(50, 50, 50, 0.2);
-$color_21: #dc6a21;
-$color_22: white;
-$color_23: #363636;
-$color_24: #8b8a87;
-$color_25: #f8b840;
-$color_26: #b50a13;
-$color_27: black;
-$color_28: red;
-$font-family_1: "HurmeHEMA", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-$font-family_2: "HEMA-foto-icons";
-$font-family_3: HEMA-foto-icons;
-$font-family_4: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family_5: inherit;
-$background-color_1: #fff;
-$background-color_2: #f1efeb;
-$background-color_3: transparent;
-$background-color_4: #323232;
-$background-color_5: #dfdfdf;
-$background-color_6: #5dc5e3;
-$background-color_7: #f6f6f6;
-$background-color_8: #36acce;
-$background-color_9: #d0cdc7;
-$background-color_10: #f8b840;
-$background-color_11: #e99800;
-$background-color_12: #9ac122;
-$background-color_13: #fdf2e5;
-$background-color_14: rgba(50, 50, 50, 0.5);
-$background-color_15: white;
-$background-color_16: rgba(93, 197, 227, 0.2);
-$background-color_17: #f7f5f3;
-$background-color_18: rgba(109, 98, 61, 0.15);
-$background-color_19: #9c1aff;
-$background-color_20: rgba(93, 197, 227, 0.5);
-$background-color_21: #cbeef7;
-$background-color_22: rgba(54, 49, 41, 0.9);
-$background-color_23: #bae8f5;
-$border-color_1: inherit;
-$border-color_2: #323232;
-$border-color_3: #fff;
-$border-color_4: #d0cdc7;
-$border-color_5: #9b9b9b;
-$border-color_6: #5dc5e3;
-$border-color_7: #dc6a21;
-$border-color_8: #9ac122;
-$border-color_9: #d0cdc7 transparent transparent transparent;
-$border-top-color_1: #9b9b9b;
-$border-bottom-color_1: #bbb;
-$border-bottom-color_2: #d0cdc7;
-$border-bottom-color_3: #dfdfdf;
+@import "config";
 
 
-@font-face {
-	font-family: "Material-Design-Iconic-Font";
-	src: url(/frontend/dist/a4d31128b633bc0b1cc1f18a34fb3851.woff2) format("woff2"), url(/frontend/dist/d2a55d331bdd1a7ea97a8a1fbb3c569c.woff) format("woff"), url(/frontend/dist/b351bd62abcd96e924d9f44a3da169a7.ttf) format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-@-webkit-keyframes zmdi-spin {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
-}
-@keyframes zmdi-spin {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(359deg);
-		transform: rotate(359deg);
-	}
-}
-@-webkit-keyframes zmdi-spin-reverse {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(-359deg);
-		transform: rotate(-359deg);
-	}
-}
-@keyframes zmdi-spin-reverse {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(-359deg);
-		transform: rotate(-359deg);
-	}
-}
 /* Material Design Iconic Font uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 
@@ -122,21 +9,21 @@ $border-bottom-color_3: #dfdfdf;
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
-	src: url(/frontend/dist/5c5ce0882824c47eee3c54afe4da8d98.woff2) format("woff2");
+	src: url(./fonts/5c5ce0882824c47eee3c54afe4da8d98.ttf) format("woff2");
 }
 @font-face {
 	font-family: "HurmeHEMA";
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
-	src: url(/frontend/dist/64f937d113dd1dab52c01b45fd31c647.woff2) format("woff2");
+	src: url(./fonts/64f937d113dd1dab52c01b45fd31c647.ttf) format("woff2");
 }
 @font-face {
 	font-family: "HurmeHEMA";
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
-	src: url(/frontend/dist/a3ab91a217556ec8f741dd071bdfd816.woff2) format("woff2");
+	src: url(./fonts/a3ab91a217556ec8f741dd071bdfd816.ttf);
 }
 @font-face {
 	font-family: "HEMA-foto-icons";
@@ -149,15 +36,8 @@ $border-bottom-color_3: #dfdfdf;
 		transform: rotate(360deg);
 	}
 }
-/*!
- * Pikaday
- * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
- */
-/*
-clear child float (pika-lendar), using the famous micro clearfix hack
-http://nicolasgallagher.com/micro-clearfix-hack/
-*/
-/* styling for abbr */
+
+
 @keyframes fade-in {
 	0% {
 		background-color: rgba(54, 49, 41, 0);
@@ -193,7 +73,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 		transform: translateX(-50%) translateY(0);
 	}
 }
-/*# sourceMappingURL=global.css.map*/
+
 .zmdi {
 	display: inline-block;
 	font: normal normal normal 14px/1 "Material-Design-Iconic-Font";
@@ -676,14 +556,14 @@ p {
 svg {
 	overflow: hidden;
 }
-&::placeholder {
+::placeholder {
 	opacity: 1;
 	line-height: 2rem;
 	font-weight: 400;
 	color: $color_19;
 	font-size: 1.5rem;
 }
-&::selection {
+::selection {
 	background-color: $background-color_4;
 	color: $color_1;
 }
@@ -5066,7 +4946,7 @@ strong.field-validation-error {
 	border: 1px solid #d0cdc7;
 	border-bottom: none;
 	border-radius: 4px 4px 0 0;
-	background-image: url(/Frontend/dist/assets/icons/ico-back-top.svg);
+	background-image: url(../img/icon-back-to-top.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: $background-color_1;
@@ -8584,31 +8464,49 @@ body.menu-open {
 	background-size: 124px 3570px;
 }
 .ico.ico-facebook {
-	width: 21px;
-	height: 22px;
-	background-position: -10px -1224px;
+	width: 50px;
+	height: 46px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/facebook.svg);
 }
 .ico.ico-twitter {
 	width: 21px;
 	height: 18px;
-	background-position: -10px -3129px;
+	width: 50px;
+	height: 46px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/twitter.svg);
 }
 .ico.ico-instagram {
 	width: 23px;
 	height: 23px;
-	background: url(/Frontend/dist/assets/icons/instagram.png) center center no-repeat;
+	background: url(../img/instagram.png) center center no-repeat;
 	background-size: 100% 100%;
 	display: inline-block;
 }
 .ico.ico-snapchat {
 	width: 25px;
 	height: 25px;
-	background-position: -10px -2927px;
+	width: 50px;
+	height: 46px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/snapchat.svg);
 }
 .ico.ico-ideal {
 	width: 27px;
 	height: 24px;
-	background-position: -10px -1534px;
+	width: 50px;
+	height: 46px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/ideal.svg);
 	transform: scale(0.9);
 }
 .ico.ico-mastercard {
