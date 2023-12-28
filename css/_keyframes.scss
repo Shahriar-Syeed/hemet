@@ -1,0 +1,40 @@
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes fade-in {
+	0% {
+		background-color: rgba(54, 49, 41, 0);
+	}
+	100% {
+		background-color: rgba(54, 49, 41, 0.6);
+	}
+}
+@keyframes scale-up {
+	0% {
+		transform: translateX(-100%), scale(0.95);
+	}
+	100% {
+		transform: translateX(0), scale(1);
+	}
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes UpDown {
+	0% {
+		transform: translateX(-50%) translateY(0);
+	}
+	50% {
+		transform: translateX(-50%) translateY(5px);
+	}
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+}

@@ -1,0 +1,31 @@
+
+/* Material Design Iconic Font uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+   @font-face {
+    font-family: "HurmeHEMA";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/5c5ce0882824c47eee3c54afe4da8d98.ttf);
+  }
+  @font-face {
+    font-family: "HurmeHEMA";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/64f937d113dd1dab52c01b45fd31c647.ttf);
+  }
+  @font-face {
+    font-family: "HurmeHEMA";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/a3ab91a217556ec8f741dd071bdfd816.ttf);
+  }
+  @font-face {
+    font-family: "HEMA-foto-icons";
+    src: url(/frontend/dist/d115a2cc4be18e8a190b6613a96e32ec.eot) format("embedded-opentype"), url(/frontend/dist/42ed8451470c12e074e91f480c302e42.ttf) format("truetype"), url(/frontend/dist/362380b151ac43b8759b6cd706e45e3a.woff) format("woff"), url(/frontend/dist/c328ed8cbd2f444edc7a3bb472441ad4.svg#HEMA-foto-icons) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
