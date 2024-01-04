@@ -185,50 +185,9 @@ img {
 [data-back-to-top]:hover {
   color: #323232;
 }
-[data-back-to-top] + a {
-  margin-top: 16px !important;
-}
 
-.question-times {
-  margin: 0 0 8px;
-  color: #323232;
-  vertical-align: top;
-}
-
-.only-nl {
-  display: none !important;
-}
-
-.nl-NL .only-nl {
-  display: inline-block !important;
-}
-.nl-NL .hidden-nl-NL {
-  display: none !important;
-}
-
-.link-blue {
-  color: #5dc5e3;
-  font-family: "HurmeHEMA", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  color: #323232;
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  letter-spacing: 0.035em;
-  transition: color 0.3s ease-in-out;
-  color: #5dc5e3;
-}
-.link-blue:hover {
-  color: #5dc5e3;
-  color: #1a96d2;
-}
-
-.mbot-20 {
+.mb-20 {
   margin-bottom: 20px;
-}
-
-.grecaptcha-badge {
-  display: none !important;
 }
 
 a {
@@ -7176,7 +7135,7 @@ body.menu-open {
   width: 50px;
   height: 46px;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../img/twitter.svg);
 }
