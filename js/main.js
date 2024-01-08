@@ -42,7 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
     accountmenu.classList.remove('active');
     accountmenuTrig.classList.remove('active');
     accountmenuPanel.classList.remove('active');
-
+    
+  });
+  accountmenu.addEventListener('click' , function() {
+    accountmenu.classList.add('active');
+    accountmenuTrig.classList.add('active');
+    accountmenuPanel.classList.add('active');
+    
+  });
+  document.addEventListener('click', (e) => {
+    if (e.target.nodeName === 'BODY') {  
+      accountmenu.classList.remove('active');
+      accountmenuTrig.classList.remove('active');
+      accountmenuPanel.classList.remove('active');
+    }
   });
 
 
