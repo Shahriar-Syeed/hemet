@@ -69,4 +69,9 @@ document.addEventListener("DOMContentLoaded", function() {
       left: 0
      });
   });
+  var element = document.querySelector('.is-open');
+    if (window.innerWidth >= 768) {
+      mainNav.classList.remove('is-open');
+      header.classList.remove('menu-open');
+    }
 });
