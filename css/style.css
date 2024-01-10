@@ -555,12 +555,6 @@ svg {
   padding-top: 10px;
   margin: 10px 0;
 }
-@media (max-width: 768px) {
-  .header-navigation .main-navigation .top-links-mobile {
-    display: block;
-    visibility: visible;
-  }
-}
 .header-navigation .main-navigation .top-links-mobile:before {
   content: "";
   position: absolute;
@@ -572,7 +566,13 @@ svg {
   display: block;
 }
 @media (max-width: 768px) {
-  .header-navigation.is-open {
+  .header-navigation .main-navigation.is-open .top-links-mobile {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 768px) {
+  .header-navigation .main-navigation.is-open {
     height: calc(100vh - 101px);
     visibility: visible;
     width: 100%;
@@ -744,16 +744,16 @@ svg {
     background-color: #fff;
     display: block;
   }
-  .header.menu-open .menu-toggle .hambarger {
+  .header.menu-open .menu-toggle .hamburger {
     background-color: #5dc5e3;
     background: none;
   }
-  .header.menu-open .menu-toggle .hambarger:after {
+  .header.menu-open .menu-toggle .hamburger:after {
     background-color: #5dc5e3;
     top: 0;
     transform: rotate(45deg);
   }
-  .header.menu-open .menu-toggle .hambarger:before {
+  .header.menu-open .menu-toggle .hamburger:before {
     background-color: #5dc5e3;
     top: 0;
     transform: rotate(-45deg);
@@ -762,6 +762,7 @@ svg {
     display: none;
   }
   .header.menu-open .menu-toggle .close-text {
+    color: #5dc5e3;
     display: block;
   }
 }

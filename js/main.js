@@ -70,8 +70,11 @@ document.addEventListener("DOMContentLoaded", function() {
      });
   });
   var element = document.querySelector('.is-open');
+  window.addEventListener('resize', (e) => {
+
     if (window.innerWidth >= 768) {
       mainNav.classList.remove('is-open');
       header.classList.remove('menu-open');
-    }
+    };
+  });
 });

@@ -211,10 +211,7 @@ svg {
 				visibility: hidden;
 				padding-top: 10px;
 				margin: 10px 0;
-				@include md {
-					display: block;
-					visibility: visible;
-				}
+				
 				&:before {
 					content: "";
 					position: absolute;
@@ -226,13 +223,21 @@ svg {
 					display: block;
 				}
 			}
-		}
-		&.is-open{
-			@include md {
-				height: calc(100vh - 101px);
-				visibility: visible;
-				width: 100%;
-			}			
+			&.is-open{
+				.top-links-mobile {
+					@include md {
+						display: block;
+						visibility: visible;
+					}
+				}
+			}
+			&.is-open{
+				@include md {
+					height: calc(100vh - 101px);
+					visibility: visible;
+					width: 100%;
+				}			
+			}
 		}
 		.menu-toggle {
 			position: relative;
@@ -400,41 +405,34 @@ svg {
 				display: block;
 	
 			}
-			.hambarger{
+			.hamburger{
 			
 					background-color: $background-color_6;
 					background: none;
 		
 				&:after {
-		
-						background-color: $background-color_6;
-						top: 0;
-						transform: rotate(45deg);
-					}
+					background-color: $background-color_6;
+					top: 0;
+					transform: rotate(45deg);
+				}
 
 				&:before {
-		
-						background-color: $background-color_6;
-						top: 0;
-						transform: rotate(-45deg);
-
+					background-color: $background-color_6;
+					top: 0;
+					transform: rotate(-45deg);
 				}
 			}
 			.open-text{
-	
 					display: none;
-
 			}
 			.close-text{
-
+					color:$color_2;
 					display: block;
 				}
 			}
 		}
-		.main-navigation{
-		
-				padding: 20px 0;
-			
+		.main-navigation{	
+				padding: 20px 0;		
 		}
 		.backdrop{
 			@include md {
@@ -445,7 +443,7 @@ svg {
 				right: 0;
 				bottom: 0;
 				left: 0;
-				background-color: $background-color_18;
+				background-color: rgba(109, 98, 61, 0.15);
 				z-index: 10;
 				transition: all 0.3s ease-out;
 			}
