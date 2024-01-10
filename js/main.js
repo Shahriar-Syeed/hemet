@@ -1,5 +1,24 @@
 
+window.onload = function() {
+  // Check scroll position on page load
+  checkScroll();
 
+  // Check scroll position on scroll
+  window.addEventListener("scroll", function() {
+    checkScroll();
+  });
+};
+function checkScroll() {
+  var header = this.querySelector('.header');
+  // Check if scroll position is not at the top
+  if (window.scrollY > 0) {
+    // Add 'scroll' class to the header
+    header.classList.add("scroll");
+  } else {
+    // Remove 'scroll' class from the header
+    header.classList.remove("scroll");
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   var backToTopElement = document.querySelector('[data-back-to-top]');
@@ -25,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       behavior: 'smooth'
      });
   });
+ 
 
 
  

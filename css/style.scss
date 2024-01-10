@@ -361,9 +361,9 @@ svg {
 			padding: 5px 0;			
 		}
 		.header-logo {
-			width: 50px;
+			width: 40px;
 			@include md {
-				width: 40px;		
+				width: 50px;		
 			}
 		}
 		.header-navigation {
@@ -678,50 +678,7 @@ svg {
 				}
 			}
 		}
-		.account {
-			.accountmenu-sidebar {
-				header {
-					>.title {
-						text-transform: lowercase;
-						font-family: $font-family_1;
-						font-weight: 700;
-						+ {
-							p {
-								margin-top: 10px;
-							}
-						}
-					}
-				}
-			}
-		}
-		.product-wrapper {
-			.product-detail {
-				.product-title {
-					.mobile-price {
-						.product-price {
-							text-transform: lowercase;
-							font-family: $font-family_1;
-							font-weight: 700;
-							+ {
-								p {
-									margin-top: 10px;
-								}
-							}
-						}
-						.price {
-							text-transform: lowercase;
-							font-family: $font-family_1;
-							font-weight: 700;
-							+ {
-								p {
-									margin-top: 10px;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+
 		.h1 {
 			+ {
 				p {
@@ -775,15 +732,24 @@ svg {
 		.product-price {
 			font-size: 1.6rem;
 			line-height: 1.6rem;
+			display: flex;
+			align-items: baseline;
+			font-family: "HurmeHEMA", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+			font-weight: 700;
 		}
 		.price {
 			font-size: 1.6rem;
 			line-height: 1.6rem;
 		}
-		.icon-price-round {
+		sub{
+			position: relative;
+			top: -3.84px;
+			left: -3.84px;
+			font-size: 60%;
 			display: inline-block;
-			padding-left: 2px;
-			font-size: 1.5rem;
+			&:not(.decimal) {
+				transform: scaleY(1.4);
+			}
 		}
 		@include md {
 			display: none;
@@ -1004,6 +970,11 @@ body.menu-open {
 			padding: 40px 20px;
 		}
 		.col {
+			.h3{
+				@include min-md {
+					margin-bottom:15px;
+				}
+			}
 			+ {	
 				col{
 					margin-top: 0;
@@ -1018,6 +989,11 @@ body.menu-open {
 			justify-content: space-between;
 			@include md {
 				flex-direction: column;
+			}
+			.h3{
+				@include min-md {
+					margin-bottom:15px;
+				}
 			}
 			.links {
 				li {
@@ -1064,7 +1040,9 @@ body.menu-open {
 			}
 		}
 		.footer-contact {
-			margin-bottom: 30px;
+			@include md {
+				margin-bottom: 30px;
+			}
 			.phone {
 				font-size: 2.4rem;
 				line-height: 1;
@@ -1091,156 +1069,14 @@ body.menu-open {
 		.h3 {
 			color: $color_1;
 		}
-		.upsell-dialog {
-			.modal-window {
-				.modal-header {
-					.h2 {
-						color: $color_1;
-					}
-					.account {
-						.accountmenu-sidebar {
-							header {
-								>.title {
-									color: $color_1;
-								}
-							}
-						}
-					}
-					.product-wrapper {
-						.product-detail {
-							.product-title {
-								.mobile-price {
-									.product-price {
-										color: $color_1;
-									}
-									.price {
-										color: $color_1;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
 		.text {
 			color: $color_1;
 		}
-		.order-detail {
-			.m-order-detail-shoppingcart {
-				.cartlines {
-					>li {
-						.piece-price {
-							.product-price {
-								color: $color_1;
-							}
-							.price {
-								color: $color_1;
-							}
-						}
-					}
-				}
-				.price-block {
-					>div {
-						>.product-price {
-							color: $color_1;
-						}
-						.price {
-							color: $color_1;
-						}
-						>.label {
-							color: $color_1;
-						}
-					}
-				}
-			}
-			.personalization {
-				>div {
-					.value {
-						color: $color_1;
-					}
-					.label {
-						color: $color_1;
-					}
-				}
-			}
-		}
+
 		.account {
 			.account-info {
 				>div {
 					color: $color_1;
-				}
-			}
-		}
-		.order-overview {
-			>.order-list {
-				>.order {
-					>a {
-						>span {
-							color: $color_1;
-						}
-					}
-				}
-			}
-			>.order-list-header {
-				>span {
-					color: $color_1;
-				}
-			}
-		}
-		.usergenerated {
-			span {
-				color: $color_1;
-			}
-		}
-		.radio {
-			input {
-				~ {
-					span {
-						color: $color_1;
-					}
-				}
-			}
-		}
-		.checkbox {
-			input {
-				~ {
-					span {
-						color: $color_1;
-					}
-				}
-			}
-		}
-		.field-validation-error {
-			color: $color_1;
-		}
-		.toast {
-			color: $color_1;
-		}
-		.register {
-			form {
-				.explanation {
-					color: $color_1;
-				}
-			}
-		}
-		.m-product-configuration {
-			.m-selected-package {
-				.label {
-					color: $color_1;
-				}
-				.package-name {
-					color: $color_1;
-				}
-			}
-		}
-		.m-item-options {
-			.price-per-piece {
-				color: $color_1;
-				.product-price {
-					span {
-						color: $color_1;
-					}
 				}
 			}
 		}
@@ -1383,8 +1219,8 @@ body.menu-open {
 		}
 	}
 	.footer-bottom-mobile {
-		display: block;
-		visibility: visible;
+		display: none;
+		visibility: hidden;
 		border-top: 1px solid #dfdfdf;
 		border-bottom: 1px solid #dfdfdf;
 		@media md {
@@ -1566,6 +1402,8 @@ body.menu-open {
 	}
 }
 .seo-grid{
+	    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--min-column-size, 250px)), 1fr));
 	&.grid-2 {
 		--min-column-size: 400px;
 		gap: 20px;
@@ -1873,67 +1711,10 @@ body.menu-open {
 		display: none;
 	}
 }
-.usp-vertical {
-	.usp-list {
-		flex-direction: column;
-		li {
-			+ {
-				li {
-					margin-top: 12px;
-				}
-			}
-		}
-	}
-}
-.product-overview {
-	overflow: hidden;
-	+ {
-		.product-overview {
-			margin-top: 40px;
-		}
-	}
-	.section-header {
-		margin-bottom: 20px;
-		text-transform: lowercase;
-		.h3 {
-			color: $color_2;
-		}
-		
-		.summit-text {
-			display: block;
-			font-size: 1.5rem;
-			line-height: 1.5rem;
-			margin-top: 10px;
-			span {
-				font-size: inherit;
-				line-height: inherit;
-			}
-			a {
-				font-size: inherit;
-				line-height: inherit;
-				color: $color_6 !important;
-				text-decoration: none;
-				line-height: 1.5 !important;
-				&:hover {
-					color: $color_3;
-					border-color: $border-color_1;
-				}
-			}
-		}
-	}
-	
-}
 
-.shoppingcart {
-	display: flex;
-	justify-content: space-between;
-	.shoppingcart-inner {
-		position: relative;
-		width: 100%;
-		padding: 0;
-		transition: width 0.3s ease-in-out;
-	}
-}
+
+
+
 .sidebar {
 	display: none;
 	width: 25%;
