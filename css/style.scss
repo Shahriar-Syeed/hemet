@@ -711,11 +711,7 @@ svg {
 		position: relative;
 		width: 27px;
 		height: 27px;
-		.icon-basket {
-			font-size: 2.4rem;
-			color: $color_13;
-			z-index: 1;
-		}
+		
 		.count {
 			position: absolute;
 			font-size: 1rem;
@@ -969,21 +965,7 @@ body.menu-open {
 		@include md {
 			padding: 40px 20px;
 		}
-		.col {
-			.h3{
-				@include min-md {
-					margin-bottom:15px;
-				}
-			}
-			+ {	
-				col{
-					margin-top: 0;
-					@include md {
-						margin-top: 30px;
-					}
-				}
-			}
-		}
+		
 		>.col {
 			display: flex;
 			justify-content: space-between;
@@ -1038,25 +1020,32 @@ body.menu-open {
 					}
 				}
 			}
-		}
-		.footer-contact {
-			@include md {
-				margin-bottom: 30px;
-			}
-			.phone {
-				font-size: 2.4rem;
-				line-height: 1;
-				text-decoration: none;
-				display: block;
-				margin-bottom: 10px;
-				a {
+			.footer-contact {
+				@include md {
+					margin-bottom: 30px;
+				}
+				.phone {
 					font-size: 2.4rem;
 					line-height: 1;
 					text-decoration: none;
+					display: block;
+					margin-bottom: 10px;
+					a {
+						font-size: 2.4rem;
+						line-height: 1;
+						text-decoration: none;
+					}
+				}
+				span {
+					display: block;
 				}
 			}
-			span {
-				display: block;
+			.col {
+				.h3{
+					@include min-md {
+						margin-bottom:15px;
+					}
+				}
 			}
 		}
 		a {
@@ -1082,6 +1071,11 @@ body.menu-open {
 		}
 		.text-underline {
 			text-decoration: underline;
+		}
+	}
+	.container{
+		@include md {
+			padding: 0;
 		}
 	}
 	&-top {
@@ -1223,7 +1217,7 @@ body.menu-open {
 		visibility: hidden;
 		border-top: 1px solid #dfdfdf;
 		border-bottom: 1px solid #dfdfdf;
-		@media md {
+		@include md {
 			display: block;
 			visibility: visible;
 		}
@@ -1268,70 +1262,44 @@ body.menu-open {
 		}
 	}
 }
-.icon-brand{
-	// width: 25px;
-	// height: 25px;
-	// overflow: hidden;
-	// background-size:30px 30px;
+
+.facebook-icon-sha{
 	display: inline-block;
-	background-image: url(../img/sprite_new.svg);
-	background-size: 40px 41px;
-	&.ico-facebook {
-		// display: inline-block;
-		// background-image: url(../img/facebook.svg);
-		// background-position: 0px -8px;
+    background-image: url(../img/ico-fb.svg);
 		width: 21px;
     height: 22px;
-    background-position: -10px 1px;
-		
+    background-position: -10px -10px;
 		
 }
-// .ico.ico-facebook {
-// 	width: 50px;
-// 	height: 46px;
-// 	background-position: center center;
-// 	background-size: cover;
-// 	background-repeat: no-repeat;
-// 	background-image: url(../img/facebook.svg);
-// }
-
-}
-.ico-twitter {
+.twitter-icon-sha {
+	display: inline-block;
 	width: 21px;
 	height: 18px;
-	width: 50px;
-	height: 46px;
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: url(../img/twitter.svg);
+	background-image: url(../img/ico-tw.svg);
+	background-position: -10px -10px;
 }
 .ico.ico-instagram {
 	width: 23px;
 	height: 23px;
-	background: url(../img/instagram.png) center center no-repeat;
+	background-image: url(../img/ico-tw.svg);
 	background-size: 100% 100%;
 	display: inline-block;
 }
-.ico.ico-snapchat {
+.snapchat-icon-sha {
+	display: inline-block;
 	width: 25px;
 	height: 25px;
-	width: 50px;
-	height: 46px;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url(../img/snapchat.svg);
+	background-image: url(../img/ico-snapchat.svg);
+	background-position: -10px -10px;
 }
-.ico.ico-ideal {
+.ideal-icon-sha {
 	width: 27px;
 	height: 24px;
-	width: 50px;
-	height: 46px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: url(../img/ideal.svg);
+	background-image: url(../img/ico-ideal.svg);
+	background-position: -10px -10px;
+
 	transform: scale(0.9);
+	margin-bottom: 3px;
 }
 .ico.ico-mastercard {
 	width: 43px;

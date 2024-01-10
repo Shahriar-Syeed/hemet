@@ -239,6 +239,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .mt-md-30 {
+    margin-top: 30px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -1048,11 +1054,6 @@ svg {
   width: 27px;
   height: 27px;
 }
-.minicart-trigger .cart-icon .icon-basket {
-  font-size: 2.4rem;
-  color: #c68916;
-  z-index: 1;
-}
 .minicart-trigger .cart-icon .count {
   position: absolute;
   font-size: 1rem;
@@ -1301,19 +1302,6 @@ body.menu-open {
     padding: 40px 20px;
   }
 }
-@media (min-width: 768px) {
-  .footer-bar .col .h3 {
-    margin-bottom: 15px;
-  }
-}
-.footer-bar .col + col {
-  margin-top: 0;
-}
-@media (max-width: 768px) {
-  .footer-bar .col + col {
-    margin-top: 30px;
-  }
-}
 .footer-bar > .col {
   display: flex;
   justify-content: space-between;
@@ -1369,24 +1357,29 @@ body.menu-open {
   border-color: #fff;
 }
 @media (max-width: 768px) {
-  .footer-bar .footer-contact {
+  .footer-bar .container .footer-contact {
     margin-bottom: 30px;
   }
 }
-.footer-bar .footer-contact .phone {
+.footer-bar .container .footer-contact .phone {
   font-size: 2.4rem;
   line-height: 1;
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
 }
-.footer-bar .footer-contact .phone a {
+.footer-bar .container .footer-contact .phone a {
   font-size: 2.4rem;
   line-height: 1;
   text-decoration: none;
 }
-.footer-bar .footer-contact span {
+.footer-bar .container .footer-contact span {
   display: block;
+}
+@media (min-width: 768px) {
+  .footer-bar .container .col .h3 {
+    margin-bottom: 15px;
+  }
 }
 .footer-bar a {
   color: #fff;
@@ -1406,6 +1399,11 @@ body.menu-open {
 }
 .footer-bar .text-underline {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer .container {
+    padding: 0;
+  }
 }
 .footer-top {
   display: flex;
@@ -1540,7 +1538,7 @@ body.menu-open {
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
 }
-@media md {
+@media (max-width: 768px) {
   .footer .footer-bottom-mobile {
     display: block;
     visibility: visible;
@@ -1583,56 +1581,45 @@ body.menu-open {
   padding: 20px;
 }
 
-.icon-brand {
+.facebook-icon-sha {
   display: inline-block;
-  background-image: url(../img/sprite_new.svg);
-  background-size: 40px 41px;
-}
-.icon-brand.ico-facebook {
+  background-image: url(../img/ico-fb.svg);
   width: 21px;
   height: 22px;
-  background-position: -10px 1px;
+  background-position: -10px -10px;
 }
 
-.ico-twitter {
+.twitter-icon-sha {
+  display: inline-block;
   width: 21px;
   height: 18px;
-  width: 50px;
-  height: 46px;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../img/twitter.svg);
+  background-image: url(../img/ico-tw.svg);
+  background-position: -10px -10px;
 }
 
 .ico.ico-instagram {
   width: 23px;
   height: 23px;
-  background: url(../img/instagram.png) center center no-repeat;
+  background-image: url(../img/ico-tw.svg);
   background-size: 100% 100%;
   display: inline-block;
 }
 
-.ico.ico-snapchat {
+.snapchat-icon-sha {
+  display: inline-block;
   width: 25px;
   height: 25px;
-  width: 50px;
-  height: 46px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../img/snapchat.svg);
+  background-image: url(../img/ico-snapchat.svg);
+  background-position: -10px -10px;
 }
 
-.ico.ico-ideal {
+.ideal-icon-sha {
   width: 27px;
   height: 24px;
-  width: 50px;
-  height: 46px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../img/ideal.svg);
+  background-image: url(../img/ico-ideal.svg);
+  background-position: -10px -10px;
   transform: scale(0.9);
+  margin-bottom: 3px;
 }
 
 .ico.ico-mastercard {
