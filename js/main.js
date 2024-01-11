@@ -9,7 +9,7 @@ window.onload = function() {
   });
 };
 function checkScroll() {
-  var header = this.querySelector('.header');
+  var header = document.querySelector('.header');
   // Check if scroll position is not at the top
   if (window.scrollY > 0) {
     // Add 'scroll' class to the header
@@ -44,6 +44,26 @@ document.addEventListener("DOMContentLoaded", function() {
       behavior: 'smooth'
      });
   });
+  const myHeader = document.querySelector(".header");
+  const pageWrapper = document.querySelector(".page-wrapper");
+
+const observerOmni = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === true) {
+      myHeader.classList.add("scrolled");
+    }
+  },
+  {
+    //In the viewport
+    root: null,
+    // 1% hero section in viewport
+    threshold: 0,
+    rootMargin: "-1px",
+  }
+);
+observerOmni.observe(pageWrapper);
  
 
 
